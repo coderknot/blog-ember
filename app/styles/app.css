@@ -1,5 +1,9 @@
 .updateBtn {
-  width: 80px;
-  margin: 0;
+  margin-right: 10px;
   float: left;
+}
+
+textarea {
+  width:100%;
+  max-width:100%;
 }
