@@ -11,3 +11,7 @@ textarea {
 .jumbotron {
   background-image: url("/img/bear.jpg");
 }
+
+.newCommentForm {
+  margin-top: 71px;
+}
