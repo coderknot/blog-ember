@@ -1,7 +1,7 @@
 {{post-detail post=model}}
 
 {{post-update post=model update="update"}}
-{{post-delete post=model destroyPost="destroyPost"}}
+{{post-delete post=model destroyPost="destroyPost" destroyComment="destroyComment"}}
 
 {{new-comment saveComment="saveComment" post=model}}
 
@@ -10,5 +10,5 @@
 <hr>
 
 {{#each model.comments as |comment|}}
-  {{comment-tile destroyComment="destroyComment" comment=comment}}
+  {{comment-tile comment=comment destroyComment="destroyComment" updateComment="updateComment"}}
 {{/each}}
