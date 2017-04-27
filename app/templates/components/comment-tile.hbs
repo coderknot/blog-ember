@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Posted By <em> {{comment.name}} </em>
+    <button class="btn btn-danger pull-right btn-sm" {{action 'delete' comment}}>Delete</button>
+  </div>
+    <div class="panel-body">
+      {{comment.content}}
+    </div>
+</div>

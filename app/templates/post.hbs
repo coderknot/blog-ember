@@ -5,10 +5,10 @@
 
 {{new-comment saveComment="saveComment" post=model}}
 
-<h2>Testing comments</h2>
-<ul>
-  <hr>
+<hr>
+<h2>Comments</h2>
+<hr>
+
 {{#each model.comments as |comment|}}
-  <li>{{comment.name}} - {{comment.content}}</li>
+  {{comment-tile destroyComment="destroyComment" comment=comment}}
 {{/each}}
-</ul>
